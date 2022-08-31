@@ -35,9 +35,9 @@
     "fix:prettier": "prettier -w ./src"
   },
   "bugs": {
-    "url": "https://github.com/de-mklinger/try2/issues"
+    "url": "https://github.com/{{github}}/{{name}}/issues"
   },
-  "homepage": "https://github.com/de-mklinger/try2#readme",
+  "homepage": "https://github.com/{{github}}/{{name}}#readme",
   "files": [
     "dist",
     "package.json"
