@@ -1,0 +1,27 @@
+{
+  "name": "@de-mklinger/create-ts-app",
+  "description": "Create TypeScript enabled Node project",
+  "version": "0.0.1",
+  "author": "Marc Klinger <mklinger@mklinger.de>",
+  "scripts": {
+    "build": "tsup src/cli.ts --minify",
+    "clean": "shx rm -rf dist",
+    "dev": "tsup src/cli.ts --watch",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "bin": "dist/cli.js",
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "shx": "^0.3.4",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "create-create-app": "^7.3.0"
+  }
+}
