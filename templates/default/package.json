@@ -16,15 +16,16 @@
     "url": "https://github.com/sponsors/{{github}}"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
-    "eslint": "^8.23.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-xo": "^0.42.0",
     "eslint-config-xo-typescript": "^0.53.0",
     "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3",
     "tsup": "^6.2.3",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.4"
   },
   "scripts": {
     "build": "tsup ./src/index.ts --dts --format esm,cjs --sourcemap",
@@ -32,7 +33,8 @@
     "lint": "eslint ./src/**/*.ts",
     "prettier": "prettier -c ./src",
     "fix:lint": "eslint ./src/**/*.ts --fix",
-    "fix:prettier": "prettier -w ./src"
+    "fix:prettier": "prettier -w ./src",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/{{github}}/{{name}}/issues"
@@ -66,5 +68,9 @@
     "ignorePatterns": [
       "dist"
     ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   }
 }
