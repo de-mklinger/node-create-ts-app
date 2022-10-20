@@ -16,15 +16,16 @@
     "url": "https://github.com/sponsors/{{github}}"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.40.0",
-    "@typescript-eslint/parser": "^5.40.0",
+    "@types/jest": "^29.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-xo": "^0.42.0",
     "eslint-config-xo-typescript": "^0.53.0",
     "prettier": "^2.7.1",
     "ts-jest": "^29.0.3",
-    "tsup": "^6.2.3",
+    "tsup": "^6.3.0",
     "typescript": "^4.8.4"
   },
   "scripts": {
