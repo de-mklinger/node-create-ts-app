@@ -17,6 +17,7 @@ create('create-ts-app', {
       prompt: "if-empty"
     }
   },
+  skipGitInit: true,
   after: ({answers, packageDir}) => {
     if (!answers.github) {
       let packageJsonFile = path.join(packageDir, 'package.json');
