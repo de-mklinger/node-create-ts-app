@@ -1,7 +1,7 @@
 {
   "name": "@de-mklinger/create-ts-app",
   "description": "Create TypeScript enabled Node project",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "Marc Klinger <mklinger@mklinger.de>",
   "scripts": {
     "build": "tsup src/cli.ts --minify",
