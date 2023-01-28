@@ -7,7 +7,8 @@
     "build": "tsup src/cli.ts --minify",
     "clean": "shx rm -rf dist",
     "dev": "tsup src/cli.ts --watch",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "test-run": "(mkdir -p ./test-out && cd ./test-out && ../dist/cli.js \"test-$(date +%Y%m%d%H%M%S)\")"
   },
   "bin": "dist/cli.js",
   "files": [
