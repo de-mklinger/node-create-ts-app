@@ -16,6 +16,7 @@
     "url": "https://github.com/sponsors/{{github}}"
   },
   "devDependencies": {
+    "@tsconfig/node18": "^1.0.1",
     "@types/jest": "^29.2.0",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
